@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    margin: 50px;
+    max-width: 1000px;
+    box-shadow: 0 50px 75px rgba(0 0 0 0.1);
+    border-left: 50px solid #fff;
+    border-right:solid #fff;
+    border: 1px solid lightgrey
+
+}
+.container .top{
+    grid-template-columns: 1fr 2fr;
+    display: grid;
+    position: relative;
+    padding: 50px;
+    padding-bottom: 0;
+
+}
+.container .top .imgBx{
+    position: relative;
+    width:100%;
+    display: flex;
+    align-items: center;
+}
+.container .top .imgBx .box{
+    width: 70%;
+    min-width: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.container .top .imgBx .box img{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ object-fit: cover;   
+}
+.container .top .profileText{
+    position: relative;
+    padding: 40px;
+    display:flex;
+    align-items:center;
+
+}
+.container .top .profileText h3{
+letter-spacing: 0.1em;/* 1em= 16px*/
+font-size:3em;
+line-height: 1.2em;
+font-weight:600;
+color: #333;
+}
+.container .top .profileText h3 span{
+position: relative;
+font-size: 0.5em;
+font-weight: 300;
+}
+.container .contentbox{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+
+}
+.container .contentbox h3{
+    border-left: 2px solid pink;
+    padding-left: 10px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    line-height: 1em;
+}
+.container .contentbox ul{
+    position: relative;
+    margin: 10px 0;
+}
+.container .contentbox ul li{
+    list-style: none;
+    margin:25px 0;
+    line-height: 1em;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+}
+.container .contentbox ul li ion-icon{
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: rgba(22,168,216);
+}
+.container .contentbox ul.education li{
+    flex-direction: column;
+    margin: 25px 0;
+
+}
+h5{
+    color:aquamarine;
+}
+h4{
+    color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+
+}
+h6{
+color: #666;
+font-weight: 300;
+font-size: 1em;
+}
+.language li{
+    flex-direction: column;
+}
+.language li span{
+    color: #333;
+    font-size:16px;
+    font-weight: 500;
+}
+.language .percentage{
+    position: relative;
+    background:#e3e3e3;
+    margin-top:15px;
+    margin-bottom: 10px;
+    height:6px;
+    display: block;
+    overflow: hidden;
+    width:100%;
+
+}
+.language .percentage div{
+    height:100%;
+    position:relative;
+top:0;
+left:0;
+background: #3590d2;
+}
+.container .contentbox ul.interest{
+    position:relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.container .contentbox ul.interest li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+margin: 20px;
+}
+.container .contentbox ul.interest li.icon{
+    position: relative;
+}
+p{
+    font-style: 300;
+}
+.rightside{
+    padding: 40px;
+}
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year-company{
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+.about .box .year-company h5{
+    color: #333;
+    font-weight: 600;
+}
+.about .skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about .skills .box .percentage{
+    position: relative;
+    width:100%;
+    height:10px;
+    background: #e3e3e3;
+}
+
+
+
+
+
+
+
+
+
+
+
