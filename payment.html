@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h1 align="middle" style="color:crimson"> Payment form</h1>
+    <h2 align="left" style="color:brown"> Contact Details </h2>
+    <p> Name : * <input type="name" id="name" name="name" required placeholder="Karishma Mohammed"> </p>
+    <fieldset class="gender">
+        <legend> Gender * </legend>
+        <p>
+            Female * <input type="radio" id="female" name="gender">
+            Male * <input type="radio" id="male" name="gender">
+        </p>
+    </fieldset>
+    <p> Phone number: * <input type="number" id="number" name="number" required> </p>
+    <p> Email: * <input type="Email" id="email" name="email" required> </p>
+    <p> Address: * <textarea type="text" id="Address" cols="100" rows="7" required> </textarea></p>
+    <h2 align="left" style="color:brown"> Card Details </h2>
+    <fieldset>
+        <p> Card type: *
+            <select name="card type" id="card type" required>
+                <option value=""> --Select your card type-- </option>
+                <option value="google pay"> Google Pay</option>
+                <option value="Phone Pay"> Phone Pay </option>
+                <option value="ruzpay"> Ruzpay </option>
+
+            </select>
+        </p>
+
+        <p>Card Number: * <input type="number" id="card number" name="number" required></p>
+<p> Expiration Date: * <input type="date" id="date" name="date"></p>
+<br>
+<p> CVV : * <input type="password" id="password" name="cvv"></p>
+
+
+
+    </fieldset>
+    <br>
+    <br>
+    <input type="submit" value="Pay Now">
+    </div>
+</body>
+</html>
